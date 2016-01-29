@@ -54,3 +54,46 @@ Deletion is still easy if there is only one child
 
 If we want to delete something with two children, we look at the max of the left
 subtree and the min of the right subtree. Either one of these two nodes can take the place of the deleted element.
+
+I pity the fool who don't make balanced BSTs
+  -Heights of subtrees of any node differ of at most one (correct explanation of
+    balanced)
+
+### Self-balancing BST
+* Red-black tree (what's actually the difference?)
+* AVL tree
+
+If you constrain your problem to three nodes, you can simply balance the whole tree
+by going up the tree.
+
+We can do rotations either left or right to re-balance the tree.
+
+Left rotations rotate from the left side of a subtree.
+
+Right rotations rotate from the right side of a subtree.
+
+AVL trees are faster in lookup, but insert and delete is a bit smaller.
+
+### Graphs
+
+Nodes are vertices and branches are edges.
+Edges can have an attribute called weight.
+Edges can have directions.
+
+Dense graphs require that each node is connected to every other node.
+Sparse graphs require that each node is connected to some of the nodes.
+
+Adjacency matrices and adjacency lists are two ways to represent graphs.
+
+### DAG (Directed Acyclic Graph)
+
+-Directed graph with no direct cycles
+
+### Dijkstra's Pseudocode
+- Start src and add to frontier
+- Find best edges
+- Suck the vertex into the frontier
+- Update all out edges of that vertex
+- Repeat
+
+s

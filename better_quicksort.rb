@@ -1,4 +1,3 @@
-
 class Array
   def qs!(start_idx = 0, len = length)
     return self if len <= 1
